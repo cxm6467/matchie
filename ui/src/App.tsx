@@ -1,4 +1,4 @@
-import React, { useState, useEffect, FormEvent } from 'react';
+import React, { useState, FormEvent } from 'react';
 import { ApolloClient, InMemoryCache, ApolloProvider, useQuery, useMutation, gql } from '@apollo/client';
 
 interface Item {
