@@ -14,7 +14,8 @@ services:
     depends_on:
       - mongo
     environment:
-      - MONGO_URI=mongodb://mongo:27017/memory-game
+      - MONGO_URI=mongodb://mongo:27017/matchie
+      - PORT=5000      
 
   mongo:
     image: mongo:latest
