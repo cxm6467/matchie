@@ -15,7 +15,7 @@ mongoose.connect(mongoUri)
     console.log('MongoDB connected');
     seedDatabase(); // Call the seed function after successful connection
   })
-  .catch(err => console.log('MongoDB connection error:', err));
+  .catch(err =>  console.log('MongoDB connection error:', err));
 
 // Function to seed the database with an initial item
 const seedDatabase = async () => {
