@@ -18,7 +18,7 @@ mongoose.connect(mongoUri)
   .catch(err =>  console.log('MongoDB connection error:', err));
 
 // Function to seed the database with an initial item
-const seedDatabase = async () => {
+const seedDatabase =  async () => {
   const items = await Item.find();
   if (items.length === 0) {
     const newItem = new Item({ name: 'Sample Item' });
